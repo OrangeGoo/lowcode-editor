@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
-import { create } from "zustand";
-
+import { create, StateCreator } from "zustand";
+import { persist } from "zustand/middleware";
 export interface Component {
   id: number;
   name: string;
